@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*Cómo se va a calcular en base al margin y padding del elemento la caja que rodea el elemento.*/
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  /*Coloured boxes*/
+  --color-backLight:white;
+  --color-dark:rgb(38, 38, 38);
+  --color-accent:rgb(243, 121, 176);
+  --color-backDark:#adadad;
+  --color-dark2:rgb(62, 62, 62);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+html,
+body {
   color: white;
+  background-color: var(--color-dark2);
+  font-family: Geneva, sans-serif;
+  margin-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: var(--color-backLight);
+  font-size: 2rem;
+  font-family: Geneva, sans-serif;
+  text-align: center;
+  margin: 20px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.AppToDo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /*Horizontal*/
+  align-items: center; /*Vertical*/
+  width: 100%;
+}
+
+/*LOGO STYLE*/
+
+.pinkHatLogoContenedor {
+  width: 100%;
+  margin: 1em;
+  display: flex;
+  justify-content: center; /*Horizontal*/
+  align-items: center; /*Vertical*/
+}
+
+.pinkHatLogoPicture {
+  height: 100px;
+}
+
+/*TO DO LIST STYLE*/
+
+.PrimaryToDoList {
+  width: 700px;
+  min-height: 500px;
+  background-color: var(--color-dark);
+  padding: 25px;
+  margin: 10px;
+  border-radius: 1em;
 }

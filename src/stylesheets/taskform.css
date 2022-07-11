@@ -1,0 +1,46 @@
+/*Estructura principal*/
+
+:root {
+    /*Coloured boxes*/
+    --color-backLight:white;
+    --color-dark:rgb(38, 38, 38);
+    --color-accent:rgb(212, 110, 156);
+    --color-backDark:#adadad;
+
+}
+
+
+.forularioTarea {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Texto*/
+
+.tareaInput {
+    width: 100%;
+    font-size: 19px;
+    background-color: white;
+    padding:  14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid white;
+    outline: none;
+}
+
+/*Boton de Agregar*/
+
+.tareaBoton {
+    padding: 16px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    outline: none;
+    background: var(--color-accent);
+    color: white;
+}
